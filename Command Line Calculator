@@ -17,6 +17,7 @@ def p():
     return(f"Your credit principal is {credit_principal} \n Overpay: {overpay}")
   except TypeError:
     print("Incorrect parameters.")
+    
 def a():
   try:
     rate = args.interest / (12 * 100) # Interest rate
@@ -25,6 +26,7 @@ def a():
     return(f"Your annuity payment is {annuity} \n Overpay: {overpay}")
   except TypeError:
     print("Incorrect parameters.")
+    
 def d():
   try:
     rate = args.interest / (12 * 100) # Interest rate
@@ -39,6 +41,7 @@ def d():
     return(f"Overpay: {overpay}")
   except TypeError:
     print("Incorrect parameters.")
+    
 def n():
   try:
     rate = args.interest / (12 * 100) # Interest rate
@@ -59,6 +62,7 @@ def n():
        
 if args.type == "diff":
   print(d())
+  
 elif args.type == "annuity":
   if args.payment and args.periods:
     print(p())
